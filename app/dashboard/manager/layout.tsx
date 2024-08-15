@@ -57,9 +57,9 @@ const groups = [
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div>
+    <>
       <Navbar groups={groups} />
-      <div>{children}</div>
-    </div>
+      <div className="w-full pt-10 pl-4 pr-10 overflow-auto">{children}</div>
+    </>
   );
 }
